@@ -17,3 +17,39 @@ int main(){
 	
 	return 0;
 }
+void shuffle(int &i1,int &i2, int &i3, int&i4){
+    int i = rand()%6+1;
+	int temp;
+	switch (i)
+	case 1:{
+		temp = i1;
+		i1=i2;
+		i2=temp;
+		break;
+	case 2:
+		temp = i1;
+		i1=i3;
+		i3=temp;
+		break;
+	case 3:
+		temp = i1;
+		i1=i4;
+		i4=temp;
+		break;
+	case 4:
+		temp = i2;
+		i2=i3;
+		i3=temp;
+		break;
+	case 5:
+		temp = i2;
+		i2=i4;
+		i4=temp;
+		break;
+	case 6:
+		temp = i3;
+		i3=i4;
+		i4=temp;
+		break;
+	}
+}
